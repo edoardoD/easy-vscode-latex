@@ -1,0 +1,20 @@
+{
+    "name": "TeX Live Container",
+    "image": "texlive/texlive:latest",
+    "postCreateCommand": "tlmgr update --self && tlmgr install scheme-full",
+    "remoteUser": "root",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                
+                "James-Yu.latex-workshop",
+                "tecosaur.latex-utilities",
+                "mathematic.vscode-latex",
+                "github.copilot",
+                "github.copilot-chat"
+
+            ]
+        }
+        
+    }
+}
