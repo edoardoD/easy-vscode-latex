@@ -1,7 +1,7 @@
 {
     "name": "TeX Live Container",
     "image": "texlive/texlive:latest",
-    "postCreateCommand": "tlmgr update --self && tlmgr install scheme-full",
+    "postCreateCommand": "tlmgr update --self && tlmgr install scheme-full && git config --global user.name 'Your Name' && git config --global user.email 'your.email@example.com'",
     "remoteUser": "root",
     "customizations": {
         "vscode": {
